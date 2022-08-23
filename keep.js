@@ -6,7 +6,21 @@ const deletedBtn = document.getElementById("deletedBtn");
 const list = document.getElementById("list");
 
 const listContent = []
-
+function push_data() {
+    if(content.value || date.value || time.value || note.value) {
+        listContent.unshift({
+            content: content.value,
+            date: date.value,
+            note: note.value,
+            time: time.value
+        })
+        render()
+        content.value = ''
+        note.value=''
+        time.value = ''
+        date.value = ''
+    }
+}
 function render() {
     let htmlStr = ''
     listContent.forEach(function (item) {
@@ -22,23 +36,28 @@ function render() {
     })
     list.innerHTML = htmlStr
 }
-
-addedBtn.addEventListener('click', function() {
-    
-    if(content.value || date.value || time.value) {
-        listContent.unshift({
-            content: content.value,
-            date: date.value,
-            note: note.value,
-            time: time.value
-        })
-        render()
-        content.value = ''
-        note.value=''
-        time.value = ''
-        date.value = ''
+content.addEventListener('keypress', function(e) {
+    if(e.code == 'Enter') {
+        push_data()
     }
-    
+})
+note.addEventListener('keypress', function(e) {
+    if(e.code == 'Enter') {
+        push_data()
+    }
+})
+date.addEventListener('keypress', function(e) {
+    if(e.code == 'Enter') {
+        push_data()
+    }
+})
+time.addEventListener('keypress', function(e) {
+    if(e.code == 'Enter') {
+        push_data()
+    }
+})
+addedBtn.addEventListener('click', function() {
+    push_data()
 })
 
 deletedBtn.addEventListener('click', function() {
