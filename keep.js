@@ -36,26 +36,28 @@ function render() {
     })
     list.innerHTML = htmlStr
 }
+
 content.addEventListener('keypress', function(e) {
     if(e.code == 'Enter') {
-        push_data()
+        push_data();
     }
 })
 note.addEventListener('keypress', function(e) {
     if(e.code == 'Enter') {
-        push_data()
+        push_data();
     }
 })
 date.addEventListener('keypress', function(e) {
     if(e.code == 'Enter') {
-        push_data()
+        push_data();
     }
 })
 time.addEventListener('keypress', function(e) {
     if(e.code == 'Enter') {
-        push_data()
+        push_data();
     }
 })
+
 addedBtn.addEventListener('click', function() {
     push_data()
 })
