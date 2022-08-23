@@ -76,11 +76,11 @@ input {
 .remove:hover {
     background-color: rgb(215, 110, 110);
 }
-.task, .date, .time {
+.task, .date, .time, .note {
     font-weight: 600;
     color: rgb(133, 9, 67);
 }
-#content, #date, #time {
+#content, #date, #time, #note {
     color:rgb(133, 9, 67);
     padding-left: 10px;
     border-radius: 10px;
