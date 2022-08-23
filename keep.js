@@ -25,7 +25,7 @@ function render() {
 
 addedBtn.addEventListener('click', function() {
     
-    if(content.value || date.value || time.value) {
+    if(content.value || date.value || time.value || note.value) {
         listContent.unshift({
             content: content.value,
             date: date.value,
