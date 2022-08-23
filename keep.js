@@ -11,7 +11,7 @@ function render() {
     listContent.forEach(function (item) {
         htmlStr = htmlStr + `
         <div class="item">
-            <div>
+            <div class="item-content">
                 <p>Task：${item.content}</p>
                 <p>Time：${item.date} ${item.time}<p>
             </div>
