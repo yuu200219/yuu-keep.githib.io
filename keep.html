@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600&family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600&family=Montserrat:wght@600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./keep.css">
+    <title>Keep</title>
+</head>
+<body>
+    <div class="app">
+        <div class="content">
+            <div id="title">Keep</div>
+            <p class="task">Task</p>
+            <input type="text" id="content" placeholder="enter your task"/>
+            <p class="date">Date</p>
+            <input type="date" id="date">
+            <p class="time">Time</p>
+            <input type="time" id="time">
+            <button class="add" id="addedBtn">Add-Task</button>
+            <button class="remove" id="deletedBtn">Delete</button>
+            <div class="list-content">
+                <div class="list" id="list">
+                    <!-- <div class="item">
+                        <div>
+                        <p>內容：</p>
+                        <p>時間：</p>
+                        </div> 
+                    </div> -->
+                </div>
+            </div>
+            
+        </div>
+        <script src="./keep.js"></script>
+    </div>
+        
+</body>
+</html>
